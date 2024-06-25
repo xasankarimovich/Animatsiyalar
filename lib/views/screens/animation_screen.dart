@@ -10,12 +10,12 @@ class AnimationScreen extends StatefulWidget {
 
 class _AnimationScreenState extends State<AnimationScreen> {
   final GlobalKey<AnimatedListState> _listKey = GlobalKey<AnimatedListState>();
-  final List<String> _list = ["Item 1", "Item 2", "Item 3"];
+  final List<String> _list = ["xasan 1", "xasan 2", "xasan 3"];
   int _nextItemIndex = 4;
 
   void _addItem() {
     final int index = _list.length;
-    _list.insert(index, "Item $_nextItemIndex");
+    _list.insert(index, "xasan $_nextItemIndex");
     _nextItemIndex++;
     _listKey.currentState!.insertItem(index);
   }
